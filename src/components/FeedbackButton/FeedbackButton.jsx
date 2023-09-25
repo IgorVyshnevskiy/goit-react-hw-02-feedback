@@ -1,8 +1,10 @@
+import css from './FeedbackButton.module.css'
+
 const FeedbackButton = ({ options, onleaveFeedback }) => {
   return (
-    <div>
+    <div className={css.containerBtn}>
       {options.map(name => (
-        <button
+        <button className={css.btn}
         type="button"
         key={name}
         name={name}

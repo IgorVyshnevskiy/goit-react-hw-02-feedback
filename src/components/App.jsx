@@ -2,7 +2,7 @@ import { Component } from 'react';
 import FeedbackOptions from './FeedbackButton/FeedbackButton';
 import StatisticsList from './StatisticsList/StatisticsList';
 import StatisticsItem from './StatisticsItem/StatiscticsItem';
-import Notification from './Notification';
+import Notification from './Notification/Notification';
 
 const options = ['Good', 'Neutral', 'Bad'];
 class App extends Component {
@@ -40,7 +40,7 @@ class App extends Component {
     const positive = this.countPositivePercentage();
 
     return (
-      <StatisticsList title={'Please leave feddback'}>
+      <StatisticsList title={'Please leave feedback'}>
         <FeedbackOptions
           options={options}
           onleaveFeedback={this.leaveFeedback}
